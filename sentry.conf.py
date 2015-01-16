@@ -1,4 +1,5 @@
 import logging
+import dj_database_url
 # This file is just Python, with a touch of Django which means you
 # you can inherit and tweak settings to your hearts content.
 from sentry.conf.server import *
