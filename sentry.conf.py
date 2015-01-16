@@ -152,7 +152,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # The email address to send on behalf of
-SERVER_EMAIL = 'root@localhost'
+SERVER_EMAIL = os.environ.get('SENDGRID_PASSWORD', 'root@localhost')
 
 ###########
 ## etc. ##
