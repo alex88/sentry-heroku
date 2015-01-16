@@ -27,6 +27,10 @@
     "SENTRY_URL_PREFIX": {
       "description": "Your applications URL, no trailing slash",
       "value": "https://YOURAPPNAME.herokuapp.com"
+    },
+    "ALLOW_REGISTRATION": {
+      "description": "Let new users register, can be True or False",
+      "value": "True"
     }
   }
 }

@@ -14,6 +14,9 @@ DATABASES = {'default': dj_database_url.config()}
 # unless you have altered all schemas first
 SENTRY_USE_BIG_INTS = True
 
+# Allow registrations
+SENTRY_ALLOW_REGISTRATION = os.environ.get('ALLOW_REGISTRATION', '') == 'True'
+
 # If you're expecting any kind of real traffic on Sentry, we highly recommend
 # configuring the CACHES and Redis settings
 
