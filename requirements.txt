@@ -1,5 +1,6 @@
 # Main requirements
 sentry == 7.1.1
+newrelic
 # Requirements for config files
 dj-database-url
 # Requirements due errors when running sentry
