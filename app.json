@@ -15,9 +15,6 @@
     "newrelic:stark",
     "rediscloud:25"
   ],
-  "scripts": {
-    "postdeploy": "sentry --config=sentry.conf.py upgrade"
-  },
   "env": {
     "DJANGO_SETTINGS_MODULE": {
       "description": "The Django settings module to use",

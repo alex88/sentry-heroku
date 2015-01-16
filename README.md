@@ -1,4 +1,4 @@
-Sentry running on Heroku
+Sentry 7 running on Heroku
 ========================
 
 Using this as base repo you can easily deploy sentry on heroku
