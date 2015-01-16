@@ -1,0 +1,35 @@
+{
+  "name": "Sentry",
+  "description": "Sentry is a realtime event logging and aggregation platform",
+  "repository": "https://github.com/alex88/sentry-heroku",
+  "website": "http://getsentry.com",
+  "keywords": [
+    "logging",
+    "error",
+    "exception",
+    "monitoring"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "sendgrid:starter",
+    "newrelic:stark",
+    "rediscloud:25"
+  ],
+  "scripts": {
+    "postdeploy": "sentry --config=sentry.conf.py upgrade"
+  },
+  "env": {
+    "DJANGO_SETTINGS_MODULE": {
+      "description": "The Django settings module to use",
+      "value": "sentry.conf"
+    },
+    "SECRET_KEY": {
+      "description": "A secret key for a particular Django installation. This is used to provide cryptographic signing, and should be set to a unique, unpredictable value.",
+      "generator": "secret"
+    },
+    "SENTRY_URL_PREFIX": {
+      "description": "Your applications URL, no trailing slash",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    }
+  }
+}
