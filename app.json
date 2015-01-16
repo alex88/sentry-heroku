@@ -31,6 +31,10 @@
     "ALLOW_REGISTRATION": {
       "description": "Let new users register, can be True or False",
       "value": "True"
+    },
+    "SENDGRID_MAIL_FROM": {
+      "description": "Send emails using this address",
+      "value": "root@localhost"
     }
   }
 }
