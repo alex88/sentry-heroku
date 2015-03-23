@@ -1,5 +1,5 @@
 # Main requirements
-sentry == 7.1.1
+sentry == 7.2.0
 newrelic
 # Requirements for config files
 dj-database-url
