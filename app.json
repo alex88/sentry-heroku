@@ -13,8 +13,8 @@
   "addons": [
     "heroku-postgresql:hobby-dev",
     "sendgrid:starter",
-    "newrelic:stark",
-    "rediscloud:25"
+    "newrelic:wayne",
+    "rediscloud:30"
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": {
